@@ -43,5 +43,6 @@ module.exports = app => {
         Atendimento.deleta(id)
             .then(deletado => res.json(id))
             .catch(erros => res.status(400).json(erros))
+            
     })
 }

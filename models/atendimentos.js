@@ -15,7 +15,6 @@ class Atendimento {
                 return !campo.valido(parametro);
             });
 
-
         this.validacoes = [
             {
                 nome: 'data',
@@ -48,7 +47,6 @@ class Atendimento {
 
         if (existemErros) {
             return new Promise((resolve, reject) => reject(erros))
-
         } else {
             /* criando um atendimento com a data de criacao
           fazemos um array com tudo que estiver dentro de atendimento mais a data de criacao
@@ -85,7 +83,7 @@ class Atendimento {
 
         if (existemErros) {
             return new Promise((resolve, reject) => reject(erros))
-
+            
         } else {
             const atendimentoAlteradoDatado = { ...valores, dataCriacao, data }
 
