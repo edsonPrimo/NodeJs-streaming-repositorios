@@ -10,7 +10,6 @@ class Pet {
         } else {
           const novoPet = { nome: pet.nome, imagem: novoCaminho }
           resolve(repositorio.adiciona(novoPet).then(() => pet))
-          // resolve(novoPet)
         }
       })
     })
