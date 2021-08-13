@@ -4,7 +4,6 @@ const path = require('path')
 module.exports = (caminho, nomeDoArquivo, callBackImagemCriada) => {
 
   const tipo = path.extname(caminho)
-
   const tiposValidos = ['jpg', 'png', 'jpeg']
   const tipoEhValido = tiposValidos.indexOf(tipo.substring(1)) !== -1
 
