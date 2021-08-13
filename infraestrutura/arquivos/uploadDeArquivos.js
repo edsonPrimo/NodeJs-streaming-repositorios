@@ -9,8 +9,8 @@ module.exports = (caminho, nomeDoArquivo, callBackImagemCriada) => {
 
   if (!tipoEhValido) {
     const erro = "Tipo é inválido"
-    console.log('ERRO, tipo inválido')
     callBackImagemCriada(erro)
+    
   } else {
     const novoCaminho = `./assets/imagens/${nomeDoArquivo}${tipo}`
 
